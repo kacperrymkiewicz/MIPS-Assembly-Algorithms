@@ -1,8 +1,8 @@
-#int factorial(int n) {
-#    if (n==0)
-#        return 1;
-#    else
-#        return n*factorial(n-1);
+# int factorial(int n) {
+#     if (n==0)
+#         return 1;
+#     else
+#         return n*factorial(n-1);
 
 .data
 	n: .word 3
@@ -20,7 +20,6 @@ main:
 
 	li $v0, 10
 	syscall
-	
 	
 factorial:
 	beq $a0, $zero, base_case
